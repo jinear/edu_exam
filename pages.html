@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>중앙ICS</title>
+    <meta name="description" content="중앙ICS" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fullpage/fullpage.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <!-- CSS End -->
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- JS End -->
+  </head>
+  <body>
+    <div id="progress">
+      <div id="progressBar"></div>
+    </div>
+    <div id="menu" onclick="openMenu();">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M4 22h-4v-4h4v4zm0-12h-4v4h4v-4zm0-8h-4v4h4v-4zm3 0v4h17v-4h-17zm0 12h17v-4h-17v4zm0 8h17v-4h-17v4z"
+        />
+      </svg>
+    </div>
+    <!-- Content -->
+    <div id="fullpage">
+      <!-- page1 -->
+      <div class="section active" id="section0" data-section="0">
+        <div>
+          <img class="page-bg-img" src="assets/image/0/bg.png" />
+          <img
+            class="content wow0 fadeInDown"
+            src="assets/image/0/t1.png"
+            data-wow-duration="1s"
+          />
+          <img
+            class="content wow0 fadeInRight"
+            src="assets/image/0/t2.png"
+            data-wow-duration="2s"
+          />
+          <div class="wow0 fadeIn" data-wow-duration="3s">
+            <img
+              class="content wow0 infinite pulse"
+              src="assets/image/0/t3.png"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- page1 End -->
+
+      <!-- page2 -->
+      <div class="section" id="section1" data-section="1">
+        <div>
+          <div class="ani-wrapper">
+            <img class="page-bg-img" src="assets/image/1/bg.png" />
+            <img
+              class="content wow1 fadeInDown"
+              src="assets/image/1/t1.png"
+              data-wow-duration="1s"
+            />
+            <img
+              class="content wow1 fadeInRight"
+              src="assets/image/1/t2.png"
+              data-wow-duration="2s"
+            />
+            <img
+              id="section1_ani"
+              class="content wow1 fadeInUp"
+              src="assets/image/1/ani1.png"
+              data-wow-duration="2s"
+            />
+          </div>
+          <div class="video-wrapper">
+            <img class="content" src="assets/image/1_1/bg.png" />
+            <img
+              class="content animated bounce infinite click"
+              src="assets/image/1_1/click.png"
+            />
+            <div class="content btn" onclick="showVideo('1');"></div>
+          </div>
+        </div>
+      </div>
+      <!-- page2 End -->
+
+      <!-- page3 -->
+      <div class="section" id="section2" data-section="2">
+        <div>
+          <img class="content" src="assets/image/2/bg.png" />
+          <div class="content wow2 fadeInLeft">
+            <img
+              class="animated pulse infinite delay-1s"
+              src="assets/image/2/t1.png"
+            />
+          </div>
+          <img
+            class="content wow2 fadeInRight"
+            src="assets/image/2/t2.png"
+            data-wow-duration="2s"
+          />
+          <div class="before">
+            <img
+              class="content wow2 fadeIn anne"
+              src="assets/image/2/ani.png"
+              data-wow-duration="3s"
+            />
+          </div>
+          <div class="after">
+            <img
+              class="content"
+              src="assets/image/2_1/ani.png"
+              data-wow-duration="3s"
+            />
+            <img
+              class="content animated bounce infinite click"
+              src="assets/image/2_1/click.png"
+            />
+            <div class="content btn" onclick="showVideo('2');"></div>
+          </div>
+        </div>
+      </div>
+      <!-- page3 End -->
+
+      <!-- page4 -->
+      <div class="section" id="section3" data-section="3">
+        <div>
+          <div class="before">
+            <img class="content" src="assets/image/3/bg.png" />
+            <img
+              class="content wow3 fadeInRight"
+              src="assets/image/3/bg1.png"
+              data-wow-duration="1s"
+            />
+            <img
+              class="content wow3 fadeIn"
+              src="assets/image/3/t1.png"
+              data-wow-delay="1.5s"
+            />
+
+            <div id="droppable" class="ui-widget-header">
+              <img
+                class="wow3 fadeInLeft"
+                src="assets/image/3/left.png"
+                data-wow-duration="1.5s"
+              />
+              <div
+                class="clothes"
+                style="
+                  position: absolute;
+                  background: transparent;
+                  border: none;
+                  width: 40px;
+                  height: 30px;
+                  top: 25px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              ></div>
+              <div
+                class="clothes"
+                style="
+                  position: absolute;
+                  background: transparent;
+                  border: none;
+                  width: 50px;
+                  height: 50px;
+                  top: 170px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              ></div>
+              <div
+                class="clothes"
+                style="
+                  position: absolute;
+                  background: transparent;
+                  border: none;
+                  width: 50px;
+                  height: 50px;
+                  top: 280px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                "
+              ></div>
+              <div
+                class="clothes"
+                style="
+                  position: absolute;
+                  background: transparent;
+                  border: none;
+                  width: 25px;
+                  height: 20px;
+                  top: 460px;
+                  left: 50%;
+                  transform: translateX(-25%);
+                "
+              ></div>
+            </div>
+          </div>
+          <div id="draggable" class="ui-widget-content">
+            <table class="wow3 fadeInUp" data-wow-delay="1s">
+              <tr>
+                <td><img src="assets/image/3/r1.png" /></td>
+                <td><img class="clothes1" src="assets/image/3/r2.png" /></td>
+                <td><img class="clothes2" src="assets/image/3/r3.png" /></td>
+                <td><img class="clothes0" src="assets/image/3/r4.png" /></td>
+              </tr>
+              <tr>
+                <td><img class="clothes3" src="assets/image/3/r5.png" /></td>
+                <td><img src="assets/image/3/r6.png" /></td>
+                <td><img src="assets/image/3/r7.png" /></td>
+              </tr>
+            </table>
+          </div>
+          <div class="after">
+            <img
+              class="content animated fadeIn"
+              src="assets/image/3_1/bg.png"
+            />
+            <img
+              class="content animated slideInLeft"
+              src="assets/image/3_1/bg1.png"
+            />
+            <img
+              class="content animated fadeIn"
+              src="assets/image/3_1/bg2.png"
+            />
+            <img
+              class="content animated slideInRight"
+              src="assets/image/3_1/ani.png"
+            />
+            <img
+              class="content animated fadeIn delay-1s"
+              src="assets/image/3_1/t1.png"
+            />
+            <img
+              class="content animated fadeIn delay-1s"
+              src="assets/image/3_1/t2.png"
+            />
+            <img
+              class="content animated fadeIn delay-1s"
+              src="assets/image/3_1/btn.png"
+              style="cursor: pointer;"
+              onclick="goToPage(5);"
+            />
+            <div class="content animated fadeIn no-select delay-1s">
+              <img
+                class="animated bounce infinite no-select"
+                src="assets/image/3_1/click.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var droped = [false, false, false, false];
+        $(function () {
+          var $draggable = $("#draggable");
+          $("#draggable img").each(function (idx) {
+            if (idx === 0 || idx === 5 || idx === 6) {
+              $(this).draggable({ revert: true });
+            } else {
+              $(this).draggable({ revert: "invalid" });
+            }
+          });
+          $("#droppable .clothes").each(function (idx) {
+            $(this).droppable({
+              accept: "#draggable .clothes" + idx,
+              classes: {
+                "ui-droppable-active": "ui-state-active",
+                "ui-droppable-hover": "ui-state-hover",
+              },
+              drop: function (e, ui) {
+                droped[idx] = true;
+                var isAfter = true;
+                for (var i = 0; i < droped.length; i++) {
+                  if (!droped[i]) {
+                    isAfter = false;
+                    break;
+                  }
+                }
+                if (isAfter) {
+                  $("#section3 .before").css("display", "none");
+                  $("#section3 .after").css("display", "block");
+                }
+                // $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
+              },
+            });
+          });
+        });
+      </script>
+      <!-- page4 End -->
+
+      <!-- page5 -->
+      <div class="section" id="section4" data-section="4">
+        <div>
+          <img class="content wow4 fadeIn" src="assets/image/4/bg.png" />
+          <img class="content wow4 fadeInDown" src="assets/image/4/bg1.png" />
+          <img class="content wow4 fadeInRight" src="assets/image/4/t1.png" />
+          <table>
+            <tr>
+              <td>
+                <img
+                  id="ask1"
+                  class="wow4 fadeInUp"
+                  src="assets/image/4/q1_click.png"
+                  onclick="handleClickAsk(1);"
+                />
+              </td>
+              <td>
+                <img
+                  id="ask2"
+                  class="wow4 fadeInUp"
+                  src="assets/image/4/q2_click.png"
+                  onclick="handleClickAsk(2);"
+                />
+              </td>
+              <td>
+                <img
+                  id="ask3"
+                  class="wow4 fadeInUp"
+                  src="assets/image/4/q3_click.png"
+                  onclick="handleClickAsk(3);"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <script>
+        function handleClickAsk(type) {
+          $("#section4 #ask" + type).attr(
+            "src",
+            "assets/image/4/q" + type + ".png"
+          );
+        }
+      </script>
+      <!-- page5 End -->
+
+      <!-- page6 -->
+      <div class="section" id="section5" data-section="5">
+        <div>
+          <img class="content" src="assets/image/5/bg.png" />
+          <img
+            class="content wow5 fadeInUp box"
+            src="assets/image/5/close_box.png"
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
+          />
+          <img
+            class="content wow5 fadeInDown"
+            src="assets/image/5/t1.png"
+            data-wow-duration="1.5s"
+          />
+          <div class="after">
+            <img
+              class="content no-select"
+              src="assets/image/5_1/l_answer.png"
+            />
+            <img
+              class="content no-select"
+              src="assets/image/5_1/r_answer.png"
+            />
+
+            <div id="l_scratch"></div>
+            <div id="r_scratch"></div>
+
+            <img
+              class="content no-select"
+              src="assets/image/5_1/l_answer_paper.png"
+            />
+            <img
+              class="content no-select"
+              src="assets/image/5_1/r_answer_paper.png"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- page6 End -->
+
+      <!-- page7 -->
+      <div class="section" id="section6" data-section="6">
+        <div>
+          <div class="before">
+            <img class="content" src="assets/image/6/bg.png" />
+            <img
+              class="content wow6 fadeInRight"
+              src="assets/image/6/t1.png"
+              data-wow-duration="2s"
+            />
+            <div class="mask"></div>
+            <img
+              class="content wow6 fadeInLeft"
+              src="assets/image/6/bg1.png"
+              data-wow-duration="1.5s"
+            />
+          </div>
+          <div class="after">
+            <img class="content" src="assets/image/6_1/bg.png" />
+          </div>
+        </div>
+      </div>
+      <!-- page7 End -->
+
+      <!-- page8 Roadmap -->
+      <div class="section" id="section7" data-section="7">
+        <div>
+          <img class="content" src="assets/image/7/bg.png" />
+          <img class="content wow7 fadeInDown" src="assets/image/7/t1.png" />
+          <img
+            class="content wow7 fadeInRight"
+            src="assets/image/7/t2.png"
+            data-wow-duration="1.5s"
+          />
+          <img
+            class="content wow7 fadeIn"
+            src="assets/image/7/btn_all.png"
+            data-wow-duration="2s"
+          />
+          <div class="btn-group wow7 fadeIn" data-wow-duration="2s">
+            <img class="img1" src="assets/image/7/btn1.png" />
+            <img class="img2" src="assets/image/7/btn2.png" />
+            <img class="img3" src="assets/image/7/btn3.png" />
+            <img class="img4" src="assets/image/7/btn4.png" />
+            <img class="img5" src="assets/image/7/btn5.png" />
+            <img class="img6" src="assets/image/7/btn6.png" />
+            <img class="img7" src="assets/image/7/btn7.png" />
+            <img class="img8" src="assets/image/7/btn8.png" />
+            <div class="btn diamond diamond-btn1" onclick="goToPage(2);"></div>
+            <div class="btn diamond diamond-btn3" onclick="goToPage(4);"></div>
+            <div class="btn diamond diamond-btn4" onclick="goToPage(3);"></div>
+            <div class="btn diamond diamond-btn6" onclick="goToPage(6);"></div>
+            <div class="btn diamond diamond-btn7" onclick="goToPage(5);"></div>
+            <div class="btn diamond diamond-btn8" onclick="goToPage(7);"></div>
+          </div>
+        </div>
+      </div>
+      <!-- page8 Roadmap End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Bottom JS -->
+    <script
+      type="text/javascript"
+      src="assets/fullpage/fullpage.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/WOW.js"></script>
+    <script type="text/javascript" src="assets/wScratchPad.js"></script>
+    <script type="text/javascript">
+      var progressTimer;
+      var progressFirstRun = true;
+      var section1Ani = 1;
+
+      $(function () {
+        new WOW({ boxClass: "wow0" }).init();
+      });
+
+      function openMenu() {
+        Swal.fire({
+          title: "",
+          icon: "",
+          html:
+            '<div class="menu">' +
+            '<img class="close" src="assets/image/menu/close.png" onclick="Swal.close();" />' +
+            '<img class="content" src="assets/image/menu/bg.png" />' +
+            // '<img class="content" src="assets/image/menu/btn_all.png" />' +
+            '<div class="btn btn1" onclick="goToPage(1);"></div>' +
+            '<div class="btn btn2" onclick="goToPage(2);"></div>' +
+            '<div class="btn btn3" onclick="goToPage(5);"></div>' +
+            '<div class="btn btn4" onclick="goToPage(8);"></div>' +
+            "</div>",
+          showConfirmButton: false,
+          showCloseButton: false,
+          showCancelButton: false,
+          focusConfirm: false,
+          grow: "fullscreen",
+        });
+      }
+
+      function showVideo(type) {
+        setTimeout(function () {
+          $.fn.fullpage.setMouseWheelScrolling(true);
+        }, 10);
+        Swal.fire({
+          title: "",
+          icon: "",
+          html:
+            "<video controls autoplay>" +
+            '<source src="assets/video/' +
+            type +
+            '.mp4" type="video/mp4">' +
+            "</video>",
+          showConfirmButton: false,
+          showCloseButton: true,
+          showCancelButton: false,
+          focusConfirm: false,
+          grow: "fullscreen",
+        });
+      }
+
+      function runProgress(oldIdx, newIdx) {
+        var num = newIdx + 1;
+        var done = parseFloat(num / 7);
+        done = 1280 * done;
+        var width = parseFloat($("#progressBar").css("width"));
+
+        if (num === 7) {
+          done = 1280;
+        }
+        if (progressTimer) {
+          clearInterval(progressTimer);
+        }
+
+        (function move(width, done, oldIdx, newIdx) {
+          progressTimer = setInterval(frame, 10);
+
+          function frame() {
+            if (progressFirstRun || oldIdx < newIdx) {
+              if (width >= done) {
+                progressFirstRun = false;
+                clearInterval(progressTimer);
+              } else {
+                width += 5;
+                $("#progressBar").css("width", width + "px");
+              }
+            } else {
+              if (width <= done) {
+                clearInterval(progressTimer);
+              } else {
+                width -= 5;
+                $("#progressBar").css("width", width + "px");
+              }
+            }
+          }
+        })(width, done, oldIdx, newIdx);
+      }
+
+      function goToPage(pageNum) {
+        window.location.href = "#page" + pageNum;
+      }
+
+      $(document).ready(function () {
+        $("#fullpage").fullpage({
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+          anchors: [
+            "page1",
+            "page2",
+            "page3",
+            "page4",
+            "page5",
+            "page6",
+            "page7",
+            "page8",
+          ],
+          scrollBar: true,
+          onLeave: function (origin, destination, direction) {
+            runProgress(origin.index, destination.index);
+            $("#section" + destination.index + " .wow").each(function () {
+              $(this).removeClass("animated");
+              $(this).removeAttr("style");
+              $(this).css("visibility", "hidden");
+            });
+            new WOW({
+              boxClass: "wow" + destination.index,
+            }).init();
+
+            //section1
+            switch (destination.index) {
+              case 1:
+                section1Ani = 1;
+                $("#section1_ani").attr("src", "assets/image/1/ani1.png");
+                $.fn.fullpage.setMouseWheelScrolling(false);
+                $("#section1 .ani-wrapper").css("opacity", 1);
+                $("#section1 .video-wrapper").css("display", "none");
+                break;
+              case 2:
+                $("#section2 .before").css("display", "block");
+                $("#section2 .after").css("display", "none");
+                break;
+              case 3:
+                $.fn.fullpage.setMouseWheelScrolling(false);
+                break;
+              case 4:
+                $.fn.fullpage.setMouseWheelScrolling(true);
+                break;
+              case 6:
+                $("#section6 .before").css("display", "block");
+                $("#section6 .after").css("display", "none");
+                break;
+            }
+          },
+          afterLoad: function (origin, destination, direction) {
+            if (progressFirstRun) {
+              runProgress(origin.index, destination.index);
+            }
+            switch (destination.index) {
+              case 2:
+                setTimeout(function () {
+                  $("#section2 .before").css("display", "none");
+                  $("#section2 .after").css("display", "block");
+                }, 1300);
+                break;
+              case 5:
+                setTimeout(function () {
+                  $("#section5 .box").attr(
+                    "src",
+                    "assets/image/5_1/open_box.png"
+                  );
+                  $("#section5 .after").css("display", "block");
+                  $("#section5 #l_scratch").wScratchPad({
+                    size: 15, // The size of the brush/scratch.
+                    bg: "#000", // Background (image path or hex color).
+                    fg: "assets/image/5_1/l_scratch.png", // Foreground (image path or hex color).
+                    realtime: true, // Calculates percentage in realitime.
+                    cursor: "grab", // Set cursor.
+                  });
+                  $("#section5 #r_scratch").wScratchPad({
+                    size: 15, // The size of the brush/scratch.
+                    bg: "#000", // Background (image path or hex color).
+                    fg: "assets/image/5_1/r_scratch.png", // Foreground (image path or hex color).
+                    realtime: true, // Calculates percentage in realitime.
+                    cursor: "grab", // Set cursor.
+                  });
+                }, 1300);
+                break;
+              case 6:
+                setTimeout(function () {
+                  $("#section6 .before").css("display", "none");
+                  $("#section6 .after").css("display", "block");
+                }, 1500);
+                break;
+            }
+          },
+        });
+
+        // $(".sub-html, .sub-html")
+        //   .on("mousedown touchstart click", function (e) {
+        //     $(this).removeClass("sub-html-remove");
+        //     $(this).addClass("sub-html-remove");
+        //   })
+        //   .bind("mousemove mouseup mouseleave touchend", function () {
+        //     $(this).removeClass("sub-html-remove");
+        //     $(this).focus();
+        //   });
+
+        // section1 animation
+        $("#section1").on("mousewheel DOMMouseScroll", function (e) {
+          var E = e.originalEvent;
+          delta = 0;
+          if (E.detail) {
+            delta = E.detail * -40;
+          } else {
+            delta = E.wheelDelta;
+          }
+
+          var num = parseInt($(this).data("section"));
+          if (delta <= -120 && section1Ani < 5) {
+            section1Ani += 1;
+          } else if (delta >= 120 && section1Ani > 1) {
+            section1Ani -= 1;
+          }
+          $("#section1_ani").attr(
+            "src",
+            "assets/image/1/ani" + section1Ani + ".png"
+          );
+          if (section1Ani >= 5) {
+            $("#section1 .ani-wrapper").css("opacity", 0);
+            $("#section1 .video-wrapper").css("display", "block");
+          } else if (section1Ani <= 1) {
+            setTimeout(function () {
+              $.fn.fullpage.setMouseWheelScrolling(true);
+            }, 10);
+          } else {
+            $("#section1 .ani-wrapper").css("opacity", 1);
+            $("#section1 .video-wrapper").css("display", "none");
+            $.fn.fullpage.setMouseWheelScrolling(false);
+          }
+        });
+
+        // $("#scratch").wScratchPad({
+        //   size: 10, // The size of the brush/scratch.
+        //   bg: "#fff", // Background (image path or hex color).
+        //   fg: "#cacaca", // Foreground (image path or hex color).
+        //   realtime: false, // Calculates percentage in realitime.
+        //   scratchDown: null, // Set scratchDown callback.
+        //   scratchUp: null, // Set scratchUp callback.
+        //   scratchMove: null, // Set scratcMove callback.
+        //   cursor: "crosshair", // Set cursor.
+        // });
+      });
+    </script>
+    <!-- Bottom JS End -->
+  </body>
+</html>
