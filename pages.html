@@ -144,319 +144,25 @@
       <!-- page3 End -->
 
       <!-- page4 -->
-      <div class="section" id="section3" data-section="3">
-        <!-- <div>
-          <div class="before">
-            <img class="content" src="assets/image/3/bg.png" />
-            <img
-              class="content wow3 fadeInRight"
-              src="assets/image/3/bg1.png"
-              data-wow-duration="1s"
-            />
-            <img
-              class="content wow3 fadeIn"
-              src="assets/image/3/t1.png"
-              data-wow-delay="1.5s"
-            />
+      <div class="section" id="section3" data-section="3"></div>
 
-            <div id="droppable" class="ui-widget-header">
-              <img
-                class="wow3 fadeInLeft"
-                src="assets/image/3/left.png"
-                data-wow-duration="1.5s"
-              />
-              <div
-                class="clothes"
-                style="
-                  position: absolute;
-                  background: transparent;
-                  border: none;
-                  width: 40px;
-                  height: 30px;
-                  top: 25px;
-                  left: 50%;
-                  transform: translateX(-50%);
-                "
-              ></div>
-              <div
-                class="clothes"
-                style="
-                  position: absolute;
-                  background: transparent;
-                  border: none;
-                  width: 50px;
-                  height: 50px;
-                  top: 170px;
-                  left: 50%;
-                  transform: translateX(-50%);
-                "
-              ></div>
-              <div
-                class="clothes"
-                style="
-                  position: absolute;
-                  background: transparent;
-                  border: none;
-                  width: 50px;
-                  height: 50px;
-                  top: 280px;
-                  left: 50%;
-                  transform: translateX(-50%);
-                "
-              ></div>
-              <div
-                class="clothes"
-                style="
-                  position: absolute;
-                  background: transparent;
-                  border: none;
-                  width: 25px;
-                  height: 20px;
-                  top: 460px;
-                  left: 50%;
-                  transform: translateX(-25%);
-                "
-              ></div>
-            </div> -->
-      </div>
-      <div id="draggable" class="ui-widget-content">
-        <!-- <table class="wow3 fadeInUp" data-wow-delay="1s">
-              <tr>
-                <td><img src="assets/image/3/r1.png" /></td>
-                <td><img class="clothes1" src="assets/image/3/r2.png" /></td>
-                <td><img class="clothes2" src="assets/image/3/r3.png" /></td>
-                <td><img class="clothes0" src="assets/image/3/r4.png" /></td>
-              </tr>
-              <tr>
-                <td><img class="clothes3" src="assets/image/3/r5.png" /></td>
-                <td><img src="assets/image/3/r6.png" /></td>
-                <td><img src="assets/image/3/r7.png" /></td>
-              </tr>
-            </table>
-          </div>
-          <div class="after">
-            <img
-              class="content animated fadeIn"
-              src="assets/image/3_1/bg.png"
-            />
-            <img
-              class="content animated slideInLeft"
-              src="assets/image/3_1/bg1.png"
-            />
-            <img
-              class="content animated fadeIn"
-              src="assets/image/3_1/bg2.png"
-            />
-            <img
-              class="content animated slideInRight"
-              src="assets/image/3_1/ani.png"
-            />
-            <img
-              class="content animated fadeIn delay-1s"
-              src="assets/image/3_1/t1.png"
-            />
-            <img
-              class="content animated fadeIn delay-1s"
-              src="assets/image/3_1/t2.png"
-            />
-            <img
-              class="content animated fadeIn delay-1s"
-              src="assets/image/3_1/btn.png"
-              style="cursor: pointer;"
-              onclick="goToPage(5);"
-            />
-            <div class="content animated fadeIn no-select delay-1s">
-              <img
-                class="animated bounce infinite no-select"
-                src="assets/image/3_1/click.png"
-              />
-            </div>
-          </div>
-        </div> -->
-      </div>
-      <script>
-        // var droped = [false, false, false, false];
-        // $(function () {
-        //   var $draggable = $("#draggable");
-        //   $("#draggable img").each(function (idx) {
-        //     if (idx === 0 || idx === 5 || idx === 6) {
-        //       $(this).draggable({ revert: true });
-        //     } else {
-        //       $(this).draggable({ revert: "invalid" });
-        //     }
-        //   });
-        //   $("#droppable .clothes").each(function (idx) {
-        //     $(this).droppable({
-        //       accept: "#draggable .clothes" + idx,
-        //       classes: {
-        //         "ui-droppable-active": "ui-state-active",
-        //         "ui-droppable-hover": "ui-state-hover",
-        //       },
-        //       drop: function (e, ui) {
-        //         droped[idx] = true;
-        //         var isAfter = true;
-        //         for (var i = 0; i < droped.length; i++) {
-        //           if (!droped[i]) {
-        //             isAfter = false;
-        //             break;
-        //           }
-        //         }
-        //         if (isAfter) {
-        //           $("#section3 .before").css("display", "none");
-        //           $("#section3 .after").css("display", "block");
-        //         }
-        //         // $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
-        //       },
-        //     });
-        //   });
-        // });
-      </script>
       <!-- page4 End -->
 
       <!-- page5 -->
-      <div class="section" id="section4" data-section="4">
-        <!-- <div>
-          <img class="content wow4 fadeIn" src="assets/image/4/bg.png" />
-          <img class="content wow4 fadeInDown" src="assets/image/4/bg1.png" />
-          <img class="content wow4 fadeInRight" src="assets/image/4/t1.png" />
-          <table>
-            <tr>
-              <td>
-                <img
-                  id="ask1"
-                  class="wow4 fadeInUp"
-                  src="assets/image/4/q1_click.png"
-                  onclick="handleClickAsk(1);"
-                />
-              </td>
-              <td>
-                <img
-                  id="ask2"
-                  class="wow4 fadeInUp"
-                  src="assets/image/4/q2_click.png"
-                  onclick="handleClickAsk(2);"
-                />
-              </td>
-              <td>
-                <img
-                  id="ask3"
-                  class="wow4 fadeInUp"
-                  src="assets/image/4/q3_click.png"
-                  onclick="handleClickAsk(3);"
-                />
-              </td>
-            </tr>
-          </table>
-        </div> -->
-      </div>
-      <script>
-        function handleClickAsk(type) {
-          $("#section4 #ask" + type).attr(
-            "src",
-            "assets/image/4/q" + type + ".png"
-          );
-        }
-      </script>
+      <div class="section" id="section4" data-section="4"></div>
+
       <!-- page5 End -->
 
       <!-- page6 -->
-      <div class="section" id="section5" data-section="5">
-        <!-- <div>
-          <img class="content" src="assets/image/5/bg.png" />
-          <img
-            class="content wow5 fadeInUp box"
-            src="assets/image/5/close_box.png"
-            data-wow-duration="1s"
-            data-wow-delay="0.5s"
-          />
-          <img
-            class="content wow5 fadeInDown"
-            src="assets/image/5/t1.png"
-            data-wow-duration="1.5s"
-          />
-          <div class="after">
-            <img
-              class="content no-select"
-              src="assets/image/5_1/l_answer.png"
-            />
-            <img
-              class="content no-select"
-              src="assets/image/5_1/r_answer.png"
-            />
-
-            <div id="l_scratch"></div>
-            <div id="r_scratch"></div>
-
-            <img
-              class="content no-select"
-              src="assets/image/5_1/l_answer_paper.png"
-            />
-            <img
-              class="content no-select"
-              src="assets/image/5_1/r_answer_paper.png"
-            />
-          </div>
-        </div> -->
-      </div>
+      <div class="section" id="section5" data-section="5"></div>
       <!-- page6 End -->
 
       <!-- page7 -->
-      <div class="section" id="section6" data-section="6">
-        <!-- <div>
-          <div class="before">
-            <img class="content" src="assets/image/6/bg.png" />
-            <img
-              class="content wow6 fadeInRight"
-              src="assets/image/6/t1.png"
-              data-wow-duration="2s"
-            />
-            <div class="mask"></div>
-            <img
-              class="content wow6 fadeInLeft"
-              src="assets/image/6/bg1.png"
-              data-wow-duration="1.5s"
-            />
-          </div>
-          <div class="after">
-            <img class="content" src="assets/image/6_1/bg.png" />
-          </div>
-        </div> -->
-      </div>
+      <div class="section" id="section6" data-section="6"></div>
       <!-- page7 End -->
 
       <!-- page8 Roadmap -->
-      <div class="section" id="section7" data-section="7">
-        <!-- <div>
-          <img class="content" src="assets/image/7/bg.png" />
-          <img class="content wow7 fadeInDown" src="assets/image/7/t1.png" />
-          <img
-            class="content wow7 fadeInRight"
-            src="assets/image/7/t2.png"
-            data-wow-duration="1.5s"
-          />
-          <img
-            class="content wow7 fadeIn"
-            src="assets/image/7/btn_all.png"
-            data-wow-duration="2s"
-          />
-          <div class="btn-group wow7 fadeIn" data-wow-duration="2s">
-            <img class="img1" src="assets/image/7/btn1.png" />
-            <img class="img2" src="assets/image/7/btn2.png" />
-            <img class="img3" src="assets/image/7/btn3.png" />
-            <img class="img4" src="assets/image/7/btn4.png" />
-            <img class="img5" src="assets/image/7/btn5.png" />
-            <img class="img6" src="assets/image/7/btn6.png" />
-            <img class="img7" src="assets/image/7/btn7.png" />
-            <img class="img8" src="assets/image/7/btn8.png" />
-            <div class="btn diamond diamond-btn1" onclick="goToPage(2);"></div>
-            <div class="btn diamond diamond-btn3" onclick="goToPage(4);"></div>
-            <div class="btn diamond diamond-btn4" onclick="goToPage(3);"></div>
-            <div class="btn diamond diamond-btn6" onclick="goToPage(6);"></div>
-            <div class="btn diamond diamond-btn7" onclick="goToPage(5);"></div>
-            <div class="btn diamond diamond-btn8" onclick="goToPage(7);"></div>
-          </div>
-        </div> -->
-      </div>
+      <div class="section" id="section7" data-section="7"></div>
       <!-- page8 Roadmap End -->
     </div>
     <!-- Content End -->
@@ -599,16 +305,6 @@
                 $("#section2 .before").css("display", "block");
                 $("#section2 .after").css("display", "none");
                 break;
-              case 3:
-                $.fn.fullpage.setMouseWheelScrolling(false);
-                break;
-              case 4:
-                $.fn.fullpage.setMouseWheelScrolling(true);
-                break;
-              case 6:
-                $("#section6 .before").css("display", "block");
-                $("#section6 .after").css("display", "none");
-                break;
             }
           },
           afterLoad: function (origin, destination, direction) {
@@ -622,48 +318,11 @@
                   $("#section2 .after").css("display", "block");
                 }, 1300);
                 break;
-              case 5:
-                setTimeout(function () {
-                  $("#section5 .box").attr(
-                    "src",
-                    "assets/image/5_1/open_box.png"
-                  );
-                  $("#section5 .after").css("display", "block");
-                  $("#section5 #l_scratch").wScratchPad({
-                    size: 15, // The size of the brush/scratch.
-                    bg: "#000", // Background (image path or hex color).
-                    fg: "assets/image/5_1/l_scratch.png", // Foreground (image path or hex color).
-                    realtime: true, // Calculates percentage in realitime.
-                    cursor: "grab", // Set cursor.
-                  });
-                  $("#section5 #r_scratch").wScratchPad({
-                    size: 15, // The size of the brush/scratch.
-                    bg: "#000", // Background (image path or hex color).
-                    fg: "assets/image/5_1/r_scratch.png", // Foreground (image path or hex color).
-                    realtime: true, // Calculates percentage in realitime.
-                    cursor: "grab", // Set cursor.
-                  });
-                }, 1300);
-                break;
-              case 6:
-                setTimeout(function () {
-                  $("#section6 .before").css("display", "none");
-                  $("#section6 .after").css("display", "block");
-                }, 1500);
+
                 break;
             }
           },
         });
-
-        // $(".sub-html, .sub-html")
-        //   .on("mousedown touchstart click", function (e) {
-        //     $(this).removeClass("sub-html-remove");
-        //     $(this).addClass("sub-html-remove");
-        //   })
-        //   .bind("mousemove mouseup mouseleave touchend", function () {
-        //     $(this).removeClass("sub-html-remove");
-        //     $(this).focus();
-        //   });
 
         // section1 animation
         $("#section1").on("mousewheel DOMMouseScroll", function (e) {
@@ -698,17 +357,6 @@
             $.fn.fullpage.setMouseWheelScrolling(false);
           }
         });
-
-        // $("#scratch").wScratchPad({
-        //   size: 10, // The size of the brush/scratch.
-        //   bg: "#fff", // Background (image path or hex color).
-        //   fg: "#cacaca", // Foreground (image path or hex color).
-        //   realtime: false, // Calculates percentage in realitime.
-        //   scratchDown: null, // Set scratchDown callback.
-        //   scratchUp: null, // Set scratchUp callback.
-        //   scratchMove: null, // Set scratcMove callback.
-        //   cursor: "crosshair", // Set cursor.
-        // });
       });
     </script>
     <!-- Bottom JS End -->
