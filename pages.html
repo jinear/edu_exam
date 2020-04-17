@@ -145,7 +145,7 @@
 
       <!-- page4 -->
       <div class="section" id="section3" data-section="3">
-        <div>
+        <!-- <div>
           <div class="before">
             <img class="content" src="assets/image/3/bg.png" />
             <img
@@ -217,10 +217,10 @@
                   transform: translateX(-25%);
                 "
               ></div>
-            </div>
-          </div>
-          <div id="draggable" class="ui-widget-content">
-            <table class="wow3 fadeInUp" data-wow-delay="1s">
+            </div> -->
+      </div>
+      <div id="draggable" class="ui-widget-content">
+        <!-- <table class="wow3 fadeInUp" data-wow-delay="1s">
               <tr>
                 <td><img src="assets/image/3/r1.png" /></td>
                 <td><img class="clothes1" src="assets/image/3/r2.png" /></td>
@@ -272,50 +272,50 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <script>
-        var droped = [false, false, false, false];
-        $(function () {
-          var $draggable = $("#draggable");
-          $("#draggable img").each(function (idx) {
-            if (idx === 0 || idx === 5 || idx === 6) {
-              $(this).draggable({ revert: true });
-            } else {
-              $(this).draggable({ revert: "invalid" });
-            }
-          });
-          $("#droppable .clothes").each(function (idx) {
-            $(this).droppable({
-              accept: "#draggable .clothes" + idx,
-              classes: {
-                "ui-droppable-active": "ui-state-active",
-                "ui-droppable-hover": "ui-state-hover",
-              },
-              drop: function (e, ui) {
-                droped[idx] = true;
-                var isAfter = true;
-                for (var i = 0; i < droped.length; i++) {
-                  if (!droped[i]) {
-                    isAfter = false;
-                    break;
-                  }
-                }
-                if (isAfter) {
-                  $("#section3 .before").css("display", "none");
-                  $("#section3 .after").css("display", "block");
-                }
-                // $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
-              },
-            });
-          });
-        });
+        // var droped = [false, false, false, false];
+        // $(function () {
+        //   var $draggable = $("#draggable");
+        //   $("#draggable img").each(function (idx) {
+        //     if (idx === 0 || idx === 5 || idx === 6) {
+        //       $(this).draggable({ revert: true });
+        //     } else {
+        //       $(this).draggable({ revert: "invalid" });
+        //     }
+        //   });
+        //   $("#droppable .clothes").each(function (idx) {
+        //     $(this).droppable({
+        //       accept: "#draggable .clothes" + idx,
+        //       classes: {
+        //         "ui-droppable-active": "ui-state-active",
+        //         "ui-droppable-hover": "ui-state-hover",
+        //       },
+        //       drop: function (e, ui) {
+        //         droped[idx] = true;
+        //         var isAfter = true;
+        //         for (var i = 0; i < droped.length; i++) {
+        //           if (!droped[i]) {
+        //             isAfter = false;
+        //             break;
+        //           }
+        //         }
+        //         if (isAfter) {
+        //           $("#section3 .before").css("display", "none");
+        //           $("#section3 .after").css("display", "block");
+        //         }
+        //         // $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
+        //       },
+        //     });
+        //   });
+        // });
       </script>
       <!-- page4 End -->
 
       <!-- page5 -->
       <div class="section" id="section4" data-section="4">
-        <div>
+        <!-- <div>
           <img class="content wow4 fadeIn" src="assets/image/4/bg.png" />
           <img class="content wow4 fadeInDown" src="assets/image/4/bg1.png" />
           <img class="content wow4 fadeInRight" src="assets/image/4/t1.png" />
@@ -347,7 +347,7 @@
               </td>
             </tr>
           </table>
-        </div>
+        </div> -->
       </div>
       <script>
         function handleClickAsk(type) {
@@ -361,7 +361,7 @@
 
       <!-- page6 -->
       <div class="section" id="section5" data-section="5">
-        <div>
+        <!-- <div>
           <img class="content" src="assets/image/5/bg.png" />
           <img
             class="content wow5 fadeInUp box"
@@ -396,13 +396,13 @@
               src="assets/image/5_1/r_answer_paper.png"
             />
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- page6 End -->
 
       <!-- page7 -->
       <div class="section" id="section6" data-section="6">
-        <div>
+        <!-- <div>
           <div class="before">
             <img class="content" src="assets/image/6/bg.png" />
             <img
@@ -420,13 +420,13 @@
           <div class="after">
             <img class="content" src="assets/image/6_1/bg.png" />
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- page7 End -->
 
       <!-- page8 Roadmap -->
       <div class="section" id="section7" data-section="7">
-        <div>
+        <!-- <div>
           <img class="content" src="assets/image/7/bg.png" />
           <img class="content wow7 fadeInDown" src="assets/image/7/t1.png" />
           <img
@@ -455,7 +455,7 @@
             <div class="btn diamond diamond-btn7" onclick="goToPage(5);"></div>
             <div class="btn diamond diamond-btn8" onclick="goToPage(7);"></div>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- page8 Roadmap End -->
     </div>
@@ -558,7 +558,7 @@
       }
 
       function goToPage(pageNum) {
-        window.location.href = "#page" + pageNum;
+        // window.location.href = "#page" + pageNum;
       }
 
       $(document).ready(function () {
